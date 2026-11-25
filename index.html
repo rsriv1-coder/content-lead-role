@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Rachna Srivastava – Your next Content Lead</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Manrope:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f2f5ef;--surface:#fff;--ink:#12261f;--muted:#4f635a;--line:#c9d5cb;--accent:#b7791f;--accent-ink:#fff;--hero:#12261f;--hero-ink:#f2f5ef;--hero-accent:#f2b632;
+--serif:"DM Serif Display",Georgia,"Times New Roman",serif;--sans:"Manrope",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0c1a15;--surface:#142720;--ink:#eaf1ea;--muted:#9fb3a8;--line:#2a443a;--accent:#f2b632;--accent-ink:#12261f;--hero:#081210;--hero-ink:#eaf1ea}}
+:root[data-theme="dark"]{--bg:#0c1a15;--surface:#142720;--ink:#eaf1ea;--muted:#9fb3a8;--line:#2a443a;--accent:#f2b632;--accent-ink:#12261f;--hero:#081210;--hero-ink:#eaf1ea}
+*{box-sizing:border-box}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--sans);line-height:1.6;font-size:17px}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+.wrap{max-width:820px;margin:0 auto;padding:0 22px}
+header.hero{background:var(--hero);color:var(--hero-ink);padding:72px 0 64px}
+.hero p.hi{margin:0 0 18px;color:var(--hero-accent);font-weight:500}
+.hero h1{font-family:var(--serif);font-weight:400;font-size:clamp(2.6rem,9vw,5rem);line-height:1.02;margin:0 0 22px;letter-spacing:-.01em}
+.hero p.lede{font-size:1.2rem;max-width:34em;margin:0 0 30px;opacity:.92}
+.btn{display:inline-block;background:var(--hero-accent);color:#12261f;font:700 1rem var(--sans);padding:14px 24px;border-radius:999px;border:0;text-decoration:none;cursor:pointer}
+.btn.alt{background:transparent;color:inherit;border:1.5px solid currentColor;margin-left:8px}
+.btn:hover{filter:brightness(1.06)}
+.menu-title{font-family:var(--serif);font-size:2rem;margin:0 0 6px;font-weight:400}
+section{padding:54px 0;border-bottom:1px dashed var(--line)}
+section>.wrap>p.sub{color:var(--muted);margin:0 0 26px;max-width:36em}
+.years{display:flex;align-items:baseline;gap:14px;flex-wrap:wrap}
+.years b{font-family:var(--serif);font-weight:400;font-size:clamp(3.4rem,12vw,6rem);line-height:1;color:var(--accent)}
+.tabs{display:flex;gap:8px;flex-wrap:wrap;margin:0 0 18px}
+.tab{font:500 .95rem var(--sans);padding:9px 16px;border-radius:999px;border:1.5px solid var(--line);background:transparent;color:var(--ink);cursor:pointer}
+.tab[aria-selected="true"]{background:var(--accent);border-color:var(--accent);color:var(--accent-ink);font-weight:700}
+.panel{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:22px 24px;min-height:7em}
+.panel h3{margin:0 0 6px;font-family:var(--serif);font-weight:400;font-size:1.5rem}
+.panel p{margin:0;color:var(--muted)}
+.dishes{list-style:none;margin:0;padding:0}
+.dishes li{border-top:1px dashed var(--line)}
+.dishes li:last-child{border-bottom:1px dashed var(--line)}
+.dishes a{display:flex;justify-content:space-between;align-items:baseline;gap:16px;padding:16px 4px;text-decoration:none}
+.dishes .n{font-family:var(--serif);font-size:1.35rem}
+.dishes .d{color:var(--muted);font-size:.92rem;text-align:right}
+.dishes a:hover .n{color:var(--accent);text-decoration:underline}
+.also{margin:16px 0 0;color:var(--muted)}
+.special{background:var(--hero);color:var(--hero-ink);border-radius:18px;padding:34px 28px;text-align:center}
+.special h2{font-family:var(--serif);font-weight:400;font-size:1.9rem;margin:0 0 8px}
+.special p{margin:0 auto 20px;max-width:30em;opacity:.9}
+#reveal{margin-top:22px;text-align:left;max-width:30em;margin-inline:auto;display:none}
+#reveal.open{display:block;animation:in .5s ease}
+@keyframes in{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+@media (prefers-reduced-motion:reduce){#reveal.open{animation:none}}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px}
+.chip{border:1.5px dashed var(--hero-accent);color:var(--hero-accent);border-radius:8px;padding:6px 12px;font-weight:500;font-size:.92rem}
+footer{padding:56px 0 72px;text-align:center}
+footer .big{font-family:var(--serif);font-size:clamp(1.9rem,6vw,2.8rem);margin:0 0 6px}
+footer .phone{font-size:1.4rem;font-weight:700;color:var(--accent);text-decoration:none}
+footer .toast{height:1.4em;color:var(--muted);font-size:.9rem;margin-top:10px}
+.copy{margin-top:14px;background:transparent;border:1.5px solid var(--line);color:var(--ink);padding:9px 18px;border-radius:999px;font:500 .95rem var(--sans);cursor:pointer}
+</style>
+</head>
+<body>
+<header class="hero">
+  <div class="wrap">
+    <p class="hi">Hi Ronak,</p>
+    <h1>Your next Content Lead.</h1>
+    <p class="lede">Came across your hiring post and wanted to throw my hat in the ring because I think… I know… I am perfect for the Content Lead role.</p>
+    <a class="btn" href="#special">See the off-menu special</a>
+  </div>
+</header>
+
+<main>
+<section>
+  <div class="wrap">
+    <h2 class="menu-title">Starters: who I am</h2>
+    <p class="sub">After 15+ years in lifestyle journalism and digital content, I work at the intersection of food, travel, and culture. I am now an independent journalist.</p>
+    <div class="years"><b>15+</b><span>years in lifestyle journalism and digital content</span></div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2 class="menu-title">Mains: where I’ve worked</h2>
+    <p class="sub">Pick a name to see the role.</p>
+    <div class="tabs" role="tablist" aria-label="Brands">
+      <button class="tab" role="tab" aria-selected="true" data-k="ct">Curly Tales</button>
+      <button class="tab" role="tab" aria-selected="false" data-k="wh">What’s Hot</button>
+      <button class="tab" role="tab" aria-selected="false" data-k="tg">The Telegraph</button>
+      <button class="tab" role="tab" aria-selected="false" data-k="ind">Independent</button>
+    </div>
+    <div class="panel" id="brandPanel" role="tabpanel"></div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2 class="menu-title">Sides: where my work appears</h2>
+    <p class="sub">Tap a publication to read my byline page.</p>
+    <ul class="dishes">
+      <li><a href="https://www.timeout.com/profile/rachna-srivastava" target="_blank" rel="noopener"><span class="n">Time Out India</span><span class="d">Author profile</span></a></li>
+      <li><a href="https://thenodmag.com/author/rachna-srivastava" target="_blank" rel="noopener"><span class="n">The Nod Mag</span><span class="d">Author profile</span></a></li>
+      <li><a href="https://www.newindianexpress.com/author/rachna-srivastava" target="_blank" rel="noopener"><span class="n">The New Sunday Express Magazine</span><span class="d">Author profile</span></a></li>
+      <li><a href="https://ellegourmet.in/author/rs" target="_blank" rel="noopener"><span class="n">Elle Gourmet India</span><span class="d">Author profile</span></a></li>
+      <li><a href="https://thegourmetedit.com/author/rachna-srivastava/" target="_blank" rel="noopener"><span class="n">The Gourmet Edit</span><span class="d">Author profile</span></a></li>
+      <li><a href="https://theidealhomeandgarden.com/author/rachna-srivastava/" target="_blank" rel="noopener"><span class="n">The Ideal Home and Garden</span><span class="d">Author profile</span></a></li>
+    </ul>
+    <p class="also">Also in Mumbai Mirror, Ikai Asai and more.</p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2 class="menu-title">The plan: what I’d build</h2>
+    <p class="sub">I have a strong foothold in the F&amp;B, Travel, and Hospitality space, and I am well-connected in lifestyle as well. I would love to bring my expertise to Dineout Mag and Mumbai Foodie, build the ecosystem and content machinery, and fuel it with thoughtful, curated pieces that align with the brand’s ethos.</p>
+    <div class="tabs" role="tablist" aria-label="Brands to build for">
+      <button class="tab" role="tab" aria-selected="true" data-p="dm">Dineout Mag</button>
+      <button class="tab" role="tab" aria-selected="false" data-p="mf">Mumbai Foodie</button>
+    </div>
+    <div class="panel" id="planPanel" role="tabpanel"></div>
+    <p class="also">Additionally, I consult on website strategy and development and also work as a researcher for culinary books.</p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2 class="menu-title">How we could work</h2>
+    <p class="sub">I am Mumbai-based and open to full-time opportunities as well as retainership/contractual work.</p>
+    <div class="tabs" role="tablist" aria-label="Engagement">
+      <button class="tab" role="tab" aria-selected="true" data-e="ft">Full-time</button>
+      <button class="tab" role="tab" aria-selected="false" data-e="rt">Retainership</button>
+      <button class="tab" role="tab" aria-selected="false" data-e="ct">Contractual</button>
+    </div>
+    <div class="panel" id="engPanel" role="tabpanel"></div>
+  </div>
+</section>
+
+<section id="special" style="border-bottom:0">
+  <div class="wrap">
+    <div class="special">
+      <h2>Off-menu special</h2>
+      <p>There’s a P.S. to this pitch. Want to see it?</p>
+      <button class="btn" id="revealBtn" aria-expanded="false" aria-controls="reveal">Reveal the P.S.</button>
+      <div id="reveal" role="region" aria-label="The P.S.">
+        <p>I can tell you which restaurants are launching in December and the ones launching early next year, in Mumbai and other cities.</p>
+        <div class="chips"><span class="chip">December openings</span><span class="chip">Early next year</span><span class="chip">Mumbai</span><span class="chip">Other cities</span></div>
+        <p style="margin-top:16px">Ask me when we talk.</p>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p class="big">Regards,</p>
+    <p style="margin:0 0 14px;color:var(--muted)">Please find my resume attached.</p>
+    <p style="margin:6px 0 0"><strong>Rachna Srivastava</strong><br>Your next Content Lead</p>
+  </div>
+</footer>
+
+<script>
+const brands={
+ct:["Curly Tales","Managing Editor","Led editorial at a food, travel and culture brand."],
+wh:["What’s Hot","Associate Editor","Edited lifestyle content as Associate Editor."],
+tg:["The Telegraph","Core Content Team","Part of the core content team at The Telegraph."],
+ind:["Independent journalist","Today","Writing across food, travel and culture, consulting on website strategy and development, and researching culinary books."]};
+const plan={
+dm:["Dineout Mag","Build the ecosystem and content machinery, fuelled with thoughtful, curated pieces that align with the brand’s ethos."],
+mf:["Mumbai Foodie","Build the ecosystem and content machinery, fuelled with thoughtful, curated pieces that align with the brand’s ethos."]};
+const eng={
+ft:["Full-time","Open to a full-time Content Lead role, based in Mumbai."],
+rt:["Retainership","Open to a retainer arrangement."],
+ct:["Contractual","Open to contractual work."]};
+function wire(attr,data,panel,fmt){
+  const tabs=[...document.querySelectorAll('['+attr+']')];
+  const show=k=>{tabs.forEach(t=>t.setAttribute('aria-selected',t.dataset[attr.slice(5)]===k));panel.innerHTML=fmt(data[k]);};
+  tabs.forEach(t=>t.addEventListener('click',()=>show(t.dataset[attr.slice(5)])));
+  show(tabs[0].dataset[attr.slice(5)]);
+}
+wire('data-k',brands,document.getElementById('brandPanel'),d=>`<h3>${d[0]}</h3><p><strong>${d[1]}.</strong> ${d[2]}</p>`);
+wire('data-p',plan,document.getElementById('planPanel'),d=>`<h3>${d[0]}</h3><p>${d[1]}</p>`);
+wire('data-e',eng,document.getElementById('engPanel'),d=>`<h3>${d[0]}</h3><p>${d[1]}</p>`);
+const rb=document.getElementById('revealBtn'),rv=document.getElementById('reveal');
+rb.addEventListener('click',()=>{const o=rv.classList.toggle('open');rb.setAttribute('aria-expanded',o);rb.textContent=o?'Hide the P.S.':'Reveal the P.S.';});
+</script>
+</body>
+</html>
